@@ -8,7 +8,6 @@ import { motion } from "framer-motion";
 import  HeartEmoji from "../../img/heartemoji.png";
 import Glasses from "../../img/glasses.png";
 import Humble from '../../img/humble.png';
-import { Link } from 'react-router-dom';
 import Resume from './resume.pdf';
 
 
