@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
 import Resume from './resume.pdf';
 
 
-const Services: React.FC = () => {
+const Services = () => {
 
     const isDark = useAppSelector((state) => state.darkMode.isDarkMode)
 
