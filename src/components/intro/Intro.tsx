@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 import { darkModeActions } from '../../store/DarkModeSlice';
 import { useAppDispatch, useAppSelector } from '../../store/hooks';
 import Button from '../../Ui/Button';
@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom';
 import classes from './Intro.module.css';
 import FloatingDiv from '../FloatingDiv/FloatingDiv'
 import { FaInstagram, FaGithub, FaLinkedinIn } from 'react-icons/fa';
+
+
 
 const Intro = () => {
 
@@ -26,7 +28,7 @@ const Intro = () => {
           </span>
         </div>
         <Link to="contact">
-          <Button onClick={() => { }} className={classes.button}>Hire me</Button>
+          <Button onClick={() => { }} >Hire me</Button>
         </Link>
         {/* social icons */}
         <div className={classes.icons}>

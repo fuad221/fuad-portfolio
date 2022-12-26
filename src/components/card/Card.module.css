@@ -1,11 +1,3 @@
-:root
-{
-  --orange : #FCA61F;
-  --orangeCard: rgba(252, 166, 31, 0.45);
-
-}
-
-
 .card {
     width: 10rem;
     height: 13rem;
