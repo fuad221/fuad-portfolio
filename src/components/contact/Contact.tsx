@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 
-import { useAppSelector } from "../store/hooks";
-import Input from '../Ui/Input'
+import { useAppSelector } from "../../store/hooks";
+import Input from '../../Ui/Input'
 
 import "./Contact.css";
 import emailjs from "@emailjs/browser";

@@ -1,4 +1,6 @@
 import React from 'react';
+import { useAppSelector } from './store/hooks';
+
 import './index.css';
 import Navbar from './components/navbar/Navbar';
 import Intro from './components/intro/Intro'
@@ -10,11 +12,16 @@ import Testimonial from './components/testimonials/Testimonials'
 
 
 function App() {
+  const isDark = useAppSelector((state) => state.darkMode.isDarkMode)
+
   return (
-    <div className="App">
-      
+    <div className="App"
+      style={{
+        background: isDark ? 'black' : '',
+        color: isDark ? 'white': '' }}
+    >
       <Navbar />
-      <Intro /> 
+      <Intro />
       <Services />
       <Experience />
       <Works />

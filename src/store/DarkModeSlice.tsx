@@ -2,8 +2,9 @@ import {createSlice } from "@reduxjs/toolkit"
 
 type DarkModeState = {
     isDarkMode: boolean;
-
 }
+
+
 
 const initialDarkModeState: DarkModeState = { isDarkMode: false}
 
