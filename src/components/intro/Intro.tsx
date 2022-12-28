@@ -11,7 +11,7 @@ import Vector2 from "../../img/Vector2.png";import boy from "../../img/boy.png";
 import glassesimoji from "../../img/glassesimoji.png";
 import thumbup from "../../img/thumbup.png";
 import crown from "../../img/crown.png";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
 
 
@@ -54,33 +54,31 @@ const Intro = () => {
         <img src={boy} alt="" />
         
         {/* animation */}
-        <motion.img
+        {/* <motion.img
           initial={{ left: "-36%" }}
           whileInView={{ left: "-24%" }}
           transition={transition}
           src={glassesimoji}
           alt=""
-        />
+        /> */}
 
-        <motion.div
+        {/* <motion.div
           initial={{ top: "-4%", left: "74%" }}
           whileInView={{ left: "68%" }}
           transition={transition}
           className={classes.floatingDiv}
         >
-          <FloatinDiv img={crown} text1="Web" text2="Developer" />
+          <FloatingDiv img={crown} text1="Web" text2="Developer" />
         </motion.div>
 
-        {/* animation */}
         <motion.div
           initial={{ left: "9rem", top: "18rem" }}
           whileInView={{ left: "0rem" }}
           transition={transition}
           className={classes.floatingDiv}
         >
-          {/* floatinDiv mein change hy dark mode ka */}
-          <FloatinDiv img={thumbup} text1="Best Design" text2="Award" />
-        </motion.div>
+          <FloatingDiv img={thumbup} text1="Best Design" text2="Award" />
+        </motion.div> */}
 
         <div className={classes.blur} style={{ background: "rgb(238 210 255)" }}></div>
         <div

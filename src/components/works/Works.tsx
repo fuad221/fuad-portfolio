@@ -1,3 +1,4 @@
+// import React from 'react'
 import { useAppSelector } from "../../store/hooks";
 import Button  from '../../Ui/Button'
 import clsx from 'clsx'
@@ -6,7 +7,7 @@ import Fiverr from "../../img/fiverr.png";
 import Amazon from "../../img/amazon.png";
 import Shopify from "../../img/Shopify.png";
 import Facebook from "../../img/Facebook.png";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import { Link } from 'react-router-dom'
 import classes from './Works.module.css'
 
@@ -47,7 +48,7 @@ const Works = () => {
                 {/* right side */}
             </div>
             <div className={classes.Wright}>
-                <motion.div
+                {/* <motion.div
                     initial={{ rotate: 45 }}
                     whileInView={{ rotate: 0 }}
                     viewport={{ margin: "-40px" }}
@@ -69,7 +70,7 @@ const Works = () => {
                     <div className={classes.wSecCircle}>
                         <img src={Facebook} alt="" />
                     </div>
-                </motion.div>
+                </motion.div> */}
                 {/* background Circles */}
                 <div className={clsx([classes.wBackCircle, classes.blueCircle])}></div>
                 <div className={clsx([classes.wBackCircle, classes.yellowCircle])}></div>

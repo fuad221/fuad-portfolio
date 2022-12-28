@@ -10,7 +10,7 @@ import emailjs from "@emailjs/browser";
 const Contact = () => {
     const isDark = useAppSelector((state) => state.darkMode.isDarkMode)
 
-    const form = useRef<HTMLFormControlsCollection>();
+    const form = useRef<HTMLFormElement>(null);
     const [done, setDone] = useState(false)
 
     const sendEmail = (e: any) => {
@@ -20,6 +20,7 @@ const Contact = () => {
             .sendForm(
                 "service_2mu5xtl",
                 "template_m5udu2c",
+                // @ts-ignore
                 form.current,
                 "VLwg1ltOWvnCYAiK_"
             )
@@ -27,7 +28,7 @@ const Contact = () => {
                 (result: any) => {
                     console.log(result.text);
                     setDone(true);
-                    form.reset();
+                    form.current?.reset();
                 },
                 (error) => {
                     console.log(error.text);
