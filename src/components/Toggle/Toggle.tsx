@@ -1,7 +1,7 @@
 import React from 'react';
-import { darkModeActions } from '../store/DarkModeSlice';
-import { useAppDispatch, useAppSelector } from "../store/hooks";
-import Button from '../Ui/Button'
+import { darkModeActions } from '../../store/DarkModeSlice';
+import { useAppDispatch, useAppSelector } from "../../store/hooks";
+import Button from '../../Ui/Button'
 import { FaSun, FaMoon } from 'react-icons/fa';
 import classes from './Toggle.module.css'
 

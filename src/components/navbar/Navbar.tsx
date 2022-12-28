@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import classes from './Navbar.module.css'
 import Button from '../../Ui/Button'
-import Toggle from '../Toggle'
+import Toggle from '../Toggle/Toggle'
 
 
 

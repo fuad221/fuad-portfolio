@@ -1,0 +1,25 @@
+
+.cRight{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex: 1;
+}
+
+.cRight .user{
+    width: 20rem;
+    height: 2rem;
+    padding: 0.3em;
+    outline: none;
+    border: 2px solid var(--orange);
+    border-radius: 8px;
+    font-size: 16px;   
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .cRight .user{
+        width: 16rem;
+    }
+}

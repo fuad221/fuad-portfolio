@@ -8,8 +8,9 @@ type ButtonProps = {
     children: React.ReactNode;
     className?: string ;
     type?: "button" | "submit" | "reset" ;
-   
 }
+
+
  const Button = ({ className, ...rest}: ButtonProps) => {
     return (
         <button className={clsx( [classes.button, className])}

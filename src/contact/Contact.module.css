@@ -1,0 +1,43 @@
+.contactForm{
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    height: 80vh;
+    margin-top: 4rem;
+      /* scroll */
+  padding-top: 3rem;
+}
+
+.cRight{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex: 1;
+}
+
+.cRight>form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    
+}
+
+
+textarea{
+    height: 4rem!important;
+}
+
+.cBlur1{
+    top: 1rem;
+    left: 8rem;
+}
+
+@media screen and (max-width: 480px) {
+    .contactForm{
+        padding: 0;
+        flex-direction: column;
+        gap: 5rem;
+        height: 40rem;
+    }
+}

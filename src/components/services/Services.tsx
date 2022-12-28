@@ -14,7 +14,8 @@ import Resume from './resume.pdf';
 
 const Services = () => {
 
-    const isDark = useAppSelector((state) => state.darkMode.isDarkMode)
+    // const isDark = useAppSelector((state) => state.darkMode.isDarkMode)
+    const isDark = useAppSelector ((state) => state.darkMode.isDarkMode)
 
     const transition = { duration: 1, type: "spring" };
     return (
