@@ -4,7 +4,7 @@ import classes from './Services.module.css';
 import clsx from 'clsx';
 import Button from '../../Ui/Button';
 import Card from '../card/Card';
-// import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 import  HeartEmoji from "../../img/heartemoji.png";
 import Glasses from "../../img/glasses.png";
 import Humble from '../../img/humble.png';
@@ -38,7 +38,7 @@ const Services = () => {
             {/* right */}
             <div className={classes.cards}>
                 {/* first card */}
-                {/* <motion.div
+                <motion.div
                     initial={{ left: "25rem" }}
                     whileInView={{ left: "14rem" }}
                     transition={transition}
@@ -74,7 +74,7 @@ const Services = () => {
                         }
                         color="rgba(252, 166, 31, 0.45)"
                     />
-                </motion.div> */}
+                </motion.div>
                 <div
                     className={clsx([classes.blur, classes.sBlur2])}
                     style={{ background: "var(--purple)" }}

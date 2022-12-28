@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./Portfolio.module.css";
 import { useAppSelector } from "../../store/hooks";
 import { Swiper, SwiperSlide } from "swiper/react";
-// import "swiper";
+import "swiper/css";
 import Sidebar from "../../img/sidebar.png";
 import Ecommerce from "../../img/ecommerce.png";
 import HOC from "../../img/hoc.png";
