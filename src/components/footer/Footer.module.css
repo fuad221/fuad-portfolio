@@ -14,11 +14,11 @@
     width: 100%;
     margin-top: 4rem;
     gap: 4rem;
-    color: white;
+    color: whitesmoke;
   }
   .fIcons {
     display: flex;
-    gap: 2rem;
+    gap: 5rem;
   }
   
   @media screen and (max-width: 480px){

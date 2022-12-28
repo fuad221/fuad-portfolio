@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "./Testimonials.module.css";
+import "./Testimonials.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import clsx from 'clsx'

@@ -1,22 +1,20 @@
 import React from "react";
-import "./Footer.module.css";
+import { useAppSelector } from "../../store/hooks";
+import classes from "./Footer.module.css";
 import Wave from "../../img/wave.png";
-// import Insta from "@iconscout/react-unicons/icons/uil-instagram";
-// import Facebook from "@iconscout/react-unicons/icons/uil-facebook";
 import { FaInstagram, FaGithub, FaFacebook } from 'react-icons/fa';
 
-// import Gitub from "@iconscout/react-unicons/icons/uil-github";
-
 const Footer = () => {
+  const isDark = useAppSelector((state) => state.darkMode.isDarkMode)
   return (
-    <div className="footer">
-      <img src={Wave} alt="" style={{ width: "100%" }} />
-      <div className="fContent">
-        <span>Zainkeepscode@gmail.com</span>
-        <div className="fIcons">
-          <FaInstagram color="white" size={"3rem"} />
-          <FaGithub color="white" size={"3rem"} />
-          <FaFacebook color="white" size={"3rem"} />
+    <div className={classes.footer} style={{color: isDark?'var(--orange)':''}}>
+      <img src={Wave} alt="" style={{ width: "100%" }}  />
+      <div className={classes.fContent} style={{color: isDark?'var(--orange)':''}}>
+        <span>fuad@gmail.com</span>
+        <div className={classes.fIcons} style={{color: isDark?'var(--orange)':''}}>
+          <FaInstagram color="whitesmoke" size={"3rem"} />
+          <FaGithub color="whitesmoke" size={"3rem"} />
+          <FaFacebook color="whitesmoke" size={"3rem"} />
         </div>
       </div>
     </div>

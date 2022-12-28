@@ -3,7 +3,7 @@ import classes from "./Experience.module.css";
 import { useAppSelector } from "../../store/hooks";
 
 
-const Experience: React.FC = () => {
+const Experience = () => {
 const isDark= useAppSelector((state) => state.darkMode.isDarkMode)
 
   return (

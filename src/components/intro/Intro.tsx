@@ -4,7 +4,7 @@ import { useAppDispatch, useAppSelector } from '../../store/hooks';
 import Button from '../../Ui/Button';
 import { Link } from 'react-router-dom';
 import classes from './Intro.module.css';
-import FloatingDiv from '../FloatingDiv/FloatingDiv'
+import FloatingDiv from '../floatingDiv/FloatingDiv'
 import { FaInstagram, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import Vector1 from "../../img/Vector1.png";
 import Vector2 from "../../img/Vector2.png";
@@ -16,7 +16,7 @@ import { motion } from "framer-motion";
 
 const Intro = () => {
 
-  const isDarkMode = useAppSelector ((state) => state.darkMode.isDarkMode)
+  // const isDarkMode = useAppSelector ((state) => state.darkMode.isDarkMode)
   const transition = { duration: 2, type: "spring" };
 
   return (
