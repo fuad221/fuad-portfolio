@@ -1,15 +1,16 @@
-import React from 'react'
+import React from 'react';
 import { useAppSelector } from "../../store/hooks";
-import Button  from '../../Ui/Button'
-import clsx from 'clsx'
+import {Link} from 'react-scroll';
+// import {Link} from 'react-router-dom';
+import Button  from '../../Ui/Button';
+import clsx from 'clsx';
 import Upwork from "../../img/Upwork.png";
 import Fiverr from "../../img/fiverr.png";
 import Amazon from "../../img/amazon.png";
 import Shopify from "../../img/Shopify.png";
 import Facebook from "../../img/Facebook.png";
 import { motion } from "framer-motion";
-import { Link } from 'react-router-dom'
-import classes from './Works.module.css'
+import classes from './Works.module.css';
 
 const Works = () => {
     const isDark = useAppSelector((state) => state.darkMode.isDarkMode)
@@ -27,16 +28,16 @@ const Works = () => {
                     </span>
                     <span>Brands & Clients</span>
                     <span>
-                        Lorem ispum is simpley dummy text of printing of printing Lorem
+                        Lorem ispum is dummy text of printing of printing Lorem
                         <br />
-                        ispum is simpley dummy text of printingLorem ispum is simpley dummy
+                        ispum is dummy text of printingLorem ispum is dummy
                         text
                         <br />
                         y dummy text of printingLorem
                         <br />
-                        ispum is simpley dummy text of printing
+                        ispum is dummy text of printing
                     </span>
-                    <Link to="contact">
+                    <Link to="contact" spy={true} smooth={true}>
                         <Button className={clsx([classes.button, classes.sButton])}>Hire Me</Button>
                     </Link>
                     <div

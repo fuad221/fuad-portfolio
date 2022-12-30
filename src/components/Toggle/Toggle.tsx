@@ -4,6 +4,7 @@ import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import Button from '../../Ui/Button'
 import { FaSun, FaMoon } from 'react-icons/fa';
 import classes from './Toggle.module.css'
+import './toggle.css'
 
 
 const Toggle = () => {

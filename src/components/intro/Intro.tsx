@@ -1,11 +1,13 @@
-import React, { ReactNode } from 'react'
-import { darkModeActions } from '../../store/DarkModeSlice';
-import { useAppDispatch, useAppSelector } from '../../store/hooks';
+import React from 'react'
+import { useAppSelector } from '../../store/hooks';
+import { Link } from "react-scroll";
+// import { Link } from "react-router-dom";
 import Button from '../../Ui/Button';
-import { Link } from 'react-router-dom';
 import classes from './Intro.module.css';
 import FloatingDiv from '../floatingDiv/FloatingDiv'
-import { FaInstagram, FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import Github from "../../img/github.png";
+import LinkedIn from "../../img/linkedin.png";
+import Instagram from "../../img/instagram.png";
 import Vector1 from "../../img/Vector1.png";
 import Vector2 from "../../img/Vector2.png";
 import boy from "../../img/boy.png";
@@ -14,9 +16,10 @@ import thumbup from "../../img/thumbup.png";
 import crown from "../../img/crown.png";
 import { motion } from "framer-motion";
 
+
 const Intro = () => {
 
-  // const isDarkMode = useAppSelector ((state) => state.darkMode.isDarkMode)
+  const isDark = useAppSelector ((state) => state.darkMode.isDarkMode)
   const transition = { duration: 2, type: "spring" };
 
   return (
@@ -25,22 +28,20 @@ const Intro = () => {
       <div className={classes.left}>
         <div className={classes.name}>
 
-          {/* yahan change hy darkmode ka */}
-          {/* <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span> */}
           <span>Fuad</span>
           <span>
             Frontend Developer with high level of experience in web designing
             and development, productions the Quality work
           </span>
         </div>
-        <Link to="contact">
+        <Link to="contact" spy={true} smooth={true}>
           <Button>Hire me</Button>
         </Link>
         {/* social icons */}
         <div className={classes.icons}>
-          <FaInstagram />
-          <FaLinkedinIn />
-          <FaGithub />
+          <a href='https://github.com/fuad221'><img src={Github} alt="" /></a>
+          <img src={LinkedIn} alt="" />
+          <img src={Instagram} alt="" />
 
         </div>
       </div>
