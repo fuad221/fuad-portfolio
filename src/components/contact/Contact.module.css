@@ -41,6 +41,12 @@ textarea{
     top: 1rem;
     left: 8rem;
 }
+.wLeft{
+    justify-content: center;
+}
+.awesome{
+
+}
 
 @media screen and (max-width: 480px) {
     .contactForm{
