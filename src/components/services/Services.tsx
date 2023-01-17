@@ -8,8 +8,7 @@ import { motion } from "framer-motion";
 import  HeartEmoji from "../../img/heartemoji.png";
 import Glasses from "../../img/glasses.png";
 import Humble from '../../img/humble.png';
-import { Link } from 'react-router-dom';
-// import Resume from '../services/resume.pdf';
+import resume from './resume.pdf';
 
 
 const Services = () => {
@@ -30,9 +29,9 @@ const Services = () => {
                     <br />
                     ispum is  dummy text of printing
                 </span>
-                {/* <a href={Resume} download>
+                <a href={resume} download>
                     <Button type="button"className={mc.button + ' ' + mc.sButton} >Download CV</Button>
-                </a> */}
+                </a>
                 <div className={mc.blur + '' + mc.sBlur1} style={{ background: "#ABF1FF94" }}></div>
             </div>
             {/* right */}

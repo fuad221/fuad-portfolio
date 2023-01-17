@@ -1,6 +1,6 @@
 import React from 'react';
 import { useAppSelector } from "../../store/hooks";
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import Button  from '../../Ui/Button';
 import clsx from 'clsx';
 import Upwork from "../../img/Upwork.png";
@@ -36,7 +36,7 @@ const Works = () => {
                         <br />
                         ispum is dummy text of printing
                     </span>
-                    <Link to="contact">
+                    <Link to="contact" spy={true} smooth={true}>
                         <Button className={clsx([mc.button, mc.sButton])}>Hire Me</Button>
                     </Link>
                     <div

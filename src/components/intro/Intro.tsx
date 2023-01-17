@@ -1,6 +1,6 @@
 import React from 'react'
 import { useAppSelector } from '../../store/hooks';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import Button from '../../Ui/Button';
 import mc from './Intro.module.css';
 import FloatingDiv from '../floatingDiv/FloatingDiv'
@@ -33,7 +33,7 @@ const Intro = () => {
             and development, productions the Quality work
           </span>
         </div>
-        <Link to="contact" >
+        <Link to="contact" spy={true} smooth={true}>
           <Button>Hire me</Button>
         </Link>
         {/* social icons */}

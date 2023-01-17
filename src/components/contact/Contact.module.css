@@ -23,12 +23,21 @@
     
 }
 
+.cRight .user{
+    width: 20rem;
+    height: 2rem;
+    padding: 0.3em;
+    outline: none;
+    border: 2px solid var(--orange);
+    border-radius: 8px;
+    font-size: 16px;   
+}
 
 textarea{
     height: 4rem!important;
 }
 
-.cBlur1{
+.cBblur1{
     top: 1rem;
     left: 8rem;
 }
@@ -40,4 +49,8 @@ textarea{
         gap: 5rem;
         height: 40rem;
     }
-}
+    .cRight .user{
+        width: 16rem;
+    }
+
+}   

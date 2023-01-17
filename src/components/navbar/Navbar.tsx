@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Link  } from 'react-router-dom';
 import { Link } from 'react-scroll';
 import mc from './Navbar.module.css';
 import Button from '../../Ui/Button';

@@ -1,26 +1,23 @@
-import { DetailedHTMLProps, InputHTMLAttributes } from 'react'
- 
-import mc from './Input.module.css'
+import React, { InputHTMLAttributes, DetailedHTMLProps } from 'react';
+import classes from './Input.module.css';
+import clsx from 'clsx';
 
-import clsx from 'clsx'
-
-// type InputProps = {
-//     type: string;
-//     name?: string;
-//     className? : string;
-//     placeholder?: string;
-//     value? : string | number;
-// }
+// https://dev.to/giselamd/creating-a-react-input-component-in-typescript-hai
 
 type NativeInputProps = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>
+interface InputProps extends NativeInputProps {
+    inputIcon?: string;
+}
 
-const Input = ({className, ...rest}: NativeInputProps) => {
-  return (
-        <input className= {clsx([mc.user, className])}
-        {...rest}
-        />
-   
-  )
+const Input = ({ className, children, inputIcon, ...rest }: InputProps) => {
+    return (
+        <div>
+            {inputIcon}
+            <input className={clsx([classes.user, className])}
+                {...rest} />
+            {children}
+        </div>
+    )
 }
 
 export default Input

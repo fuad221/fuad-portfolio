@@ -62,6 +62,8 @@ const Contact = () => {
                         style={{ background: "var(--purple)" }}
                     ></div>
                 </form>
+
+                
             </div>
         </div>
     );
