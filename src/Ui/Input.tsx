@@ -1,6 +1,6 @@
 import { DetailedHTMLProps, InputHTMLAttributes } from 'react'
  
-import classes from './Input.module.css'
+import mc from './Input.module.css'
 
 import clsx from 'clsx'
 
@@ -16,7 +16,7 @@ type NativeInputProps = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>,
 
 const Input = ({className, ...rest}: NativeInputProps) => {
   return (
-        <input className= {clsx([classes.user, className])}
+        <input className= {clsx([mc.user, className])}
         {...rest}
         />
    

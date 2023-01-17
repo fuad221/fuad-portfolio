@@ -10,14 +10,14 @@ import Works from './components/works/Works'
 import Portfolio from './components/portfolio/Portfolio'
 import Testimonial from './components/testimonials/Testimonials'
 import Footer from './components/footer/Footer'
-import classes from './App.module.css'
+import mc from './App.module.css'
 import clsx from 'clsx';
 
 function App() {
   const isDark = useAppSelector((state) => state.darkMode.isDarkMode)
 
   return (
-    <div className={clsx(classes.App, {[classes.dark]: isDark})}
+    <div className={clsx(mc.App, {[mc.dark]: isDark})}
     // className="App"
     // className="App dark"
     >

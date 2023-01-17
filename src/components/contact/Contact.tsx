@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { useAppSelector } from "../../store/hooks";
 import Input from '../../Ui/Input'
-import classes from "./Contact.module.css";
+import mc from "./Contact.module.css";
 import emailjs from "@emailjs/browser";
 import clsx from "clsx";
 
@@ -44,13 +44,13 @@ const Contact = () => {
                     <span style={{ color: isDark ? 'white' : '' }}>Get in Touch</span>
                     <span>Contact me</span>
                     <div
-                        className={clsx([classes.blur, classes.cBlur1])}
+                        className={clsx([mc.blur, mc.cBlur1])}
                         style={{ background: "#ABF1FF94" }}
                     ></div>
                 </div>
             </div>
             {/* right side form */}
-            <div className={classes.cRight}>
+            <div className={mc.cRight}>
                 <form ref={form} onSubmit={sendEmail}>
                     <Input type="text" name="user_name" className="user" placeholder="Name" />
                     <Input type="email" name="user_email" className="user" placeholder="Email" />
@@ -58,7 +58,7 @@ const Contact = () => {
                     <Input type="submit" value="Send" className="button" />
                     <span>{done && "Thanks for Contacting me"}</span>
                     <div
-                        className={clsx([classes.blur, classes.cBlur1])}
+                        className={clsx([mc.blur, mc.cBlur1])}
                         style={{ background: "var(--purple)" }}
                     ></div>
                 </form>

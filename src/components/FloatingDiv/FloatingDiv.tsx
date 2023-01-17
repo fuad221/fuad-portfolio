@@ -1,5 +1,5 @@
 import React from "react";
-import classes from './FloatingDiv.module.css'
+import mc from './FloatingDiv.module.css'
 
 type FloatingDivProps = {
     img: string;
@@ -9,7 +9,7 @@ type FloatingDivProps = {
 const FloatingDiv = ({img, text1, text2}: FloatingDivProps) => {
   return (
     // darkMode
-    <div className={classes.floatingdiv}>
+    <div className={mc.floatingdiv}>
       <img src={img} alt="" />
       <span>
         {text1}

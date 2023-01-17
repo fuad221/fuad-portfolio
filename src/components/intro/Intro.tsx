@@ -1,16 +1,15 @@
 import React from 'react'
 import { useAppSelector } from '../../store/hooks';
-import { Link } from "react-scroll";
-// import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 import Button from '../../Ui/Button';
-import classes from './Intro.module.css';
+import mc from './Intro.module.css';
 import FloatingDiv from '../floatingDiv/FloatingDiv'
 import Github from "../../img/github.png";
 import LinkedIn from "../../img/linkedin.png";
 import Instagram from "../../img/instagram.png";
 import Vector1 from "../../img/Vector1.png";
 import Vector2 from "../../img/Vector2.png";
-import boy from "../../img/boy.png";
+import fuad from "../../img/fuad.png";
 import glassesimoji from "../../img/glassesimoji.png";
 import thumbup from "../../img/thumbup.png";
 import crown from "../../img/crown.png";
@@ -23,10 +22,10 @@ const Intro = () => {
   const transition = { duration: 2, type: "spring" };
 
   return (
-    <div className={classes.Intro} id="Intro">
+    <div className={mc.Intro} id="Intro">
       {/* left name side */}
-      <div className={classes.left}>
-        <div className={classes.name}>
+      <div className={mc.left}>
+        <div className={mc.name}>
 
           <span>Fuad</span>
           <span>
@@ -34,11 +33,11 @@ const Intro = () => {
             and development, productions the Quality work
           </span>
         </div>
-        <Link to="contact" spy={true} smooth={true}>
+        <Link to="contact" >
           <Button>Hire me</Button>
         </Link>
         {/* social icons */}
-        <div className={classes.icons}>
+        <div className={mc.icons}>
           <a href='https://github.com/fuad221'><img src={Github} alt="" /></a>
           <img src={LinkedIn} alt="" />
           <img src={Instagram} alt="" />
@@ -47,10 +46,10 @@ const Intro = () => {
       </div>
       {/* right image side */}
       {/* right image side */}
-      <div className={classes.right}>
+      <div className={mc.right}>
         <img src={Vector1} alt="" />
         <img src={Vector2} alt="" />
-        <img src={boy} alt="" />
+        <img src={fuad} alt="" />
         
         {/* animation */}
         <motion.img
@@ -65,7 +64,7 @@ const Intro = () => {
           initial={{ top: "-4%", left: "74%" }}
           whileInView={{ left: "68%" }}
           transition={transition}
-          className={classes.floatingDiv}
+          className={mc.floatingDiv}
         >
           <FloatingDiv img={crown} text1="Web" text2="Developer" />
         </motion.div>
@@ -74,14 +73,14 @@ const Intro = () => {
           initial={{ left: "9rem", top: "18rem" }}
           whileInView={{ left: "0rem" }}
           transition={transition}
-          className={classes.floatingDiv}
+          className={mc.floatingDiv}
         >
           <FloatingDiv img={thumbup} text1="Best Design" text2="Award" />
         </motion.div>
 
-        <div className={classes.blur} style={{ background: "rgb(238 210 255)" }}></div>
+        <div className={mc.blur} style={{ background: "rgb(238 210 255)" }}></div>
         <div
-          className={classes.blur}
+          className={mc.blur}
           style={{
             background: "#C1F5FF",
             top: "17rem",

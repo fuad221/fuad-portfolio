@@ -4,8 +4,6 @@ type DarkModeState = {
     isDarkMode: boolean;
 }
 
-
-
 const initialDarkModeState: DarkModeState = { isDarkMode: false}
 
 const darkModeSlice = createSlice({
@@ -20,4 +18,4 @@ const darkModeSlice = createSlice({
 
 export const darkModeActions = darkModeSlice.actions;
 
-export default darkModeSlice
+export default darkModeSlice;

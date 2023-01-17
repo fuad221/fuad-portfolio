@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./Portfolio.module.css";
+import mc from "./Portfolio.module.css";
 import { useAppSelector } from "../../store/hooks";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -12,7 +12,7 @@ import MusicApp from "../../img/musicapp.png";
 const Portfolio = () => {
   const isDark = useAppSelector((state) => state.darkMode.isDarkMode)
   return (
-    <div className={classes.portfolio} id="portfolio">
+    <div className={mc.portfolio} id="portfolio">
       {/* heading */}
       <span style={{color: isDark?'white': ''}}>Recent Projects</span>
       <span>Portfolio</span>
@@ -22,7 +22,7 @@ const Portfolio = () => {
         spaceBetween={30}
         slidesPerView={3}
         grabCursor={true}
-        className={classes.portfolioSlider}
+        className={mc.portfolioSlider}
       >
         <SwiperSlide>
           <img src={Sidebar} alt="" />

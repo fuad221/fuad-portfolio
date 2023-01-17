@@ -1,6 +1,6 @@
 import React from 'react'
 import { useAppSelector } from '../../store/hooks';
-import classes from './Services.module.css';
+import mc from './Services.module.css';
 import clsx from 'clsx';
 import Button from '../../Ui/Button';
 import Card from '../card/Card';
@@ -8,8 +8,8 @@ import { motion } from "framer-motion";
 import  HeartEmoji from "../../img/heartemoji.png";
 import Glasses from "../../img/glasses.png";
 import Humble from '../../img/humble.png';
-// import { Link } from 'react-scroll';
-import Resume from './resume.pdf';
+import { Link } from 'react-router-dom';
+// import Resume from '../services/resume.pdf';
 
 
 const Services = () => {
@@ -19,24 +19,24 @@ const Services = () => {
 
     const transition = { duration: 1, type: "spring" };
     return (
-        <div className={classes.services} id="services">
+        <div className={mc.services} id="services">
             {/* left side */}
-            <div className={classes.awesome}>
+            <div className={mc.awesome}>
                 {/* dark mode */}
                 <span style={{ color: isDark ? "white" : "" }}>My Awesome</span>
                 <span>services</span>
                 <span>
-                    Lorem ispum is simpley dummy text of printing of printing Lorem
+                    Lorem ispum is  dummy text of printing of printing Lorem
                     <br />
-                    ispum is simpley dummy text of printing
+                    ispum is  dummy text of printing
                 </span>
-                <a href={Resume} download>
-                    <Button type="button"className={classes.button + ' ' + classes.sButton} >Download CV</Button>
-                </a>
-                <div className={classes.blur + '' + classes.sBlur1} style={{ background: "#ABF1FF94" }}></div>
+                {/* <a href={Resume} download>
+                    <Button type="button"className={mc.button + ' ' + mc.sButton} >Download CV</Button>
+                </a> */}
+                <div className={mc.blur + '' + mc.sBlur1} style={{ background: "#ABF1FF94" }}></div>
             </div>
             {/* right */}
-            <div className={classes.cards}>
+            <div className={mc.cards}>
                 {/* first card */}
                 <motion.div
                     initial={{ left: "25rem" }}
@@ -46,7 +46,7 @@ const Services = () => {
                     <Card
                         emoji={HeartEmoji}
                         heading={"Design"}
-                        detail={"Adobe xd, Photoshop, Adobe Illustrator, Blender 3D"}
+                        detail={"Adobe xd, Photoshope, Adobe Illustrator, Blender 3D"}
                     />
                 </motion.div>
                 <motion.div
@@ -76,7 +76,7 @@ const Services = () => {
                     />
                 </motion.div>
                 <div
-                    className={clsx([classes.blur, classes.sBlur2])}
+                    className={clsx([mc.blur, mc.sBlur2])}
                     style={{ background: "var(--purple)" }}
                 ></div>
             </div>

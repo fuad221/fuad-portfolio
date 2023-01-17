@@ -1,7 +1,6 @@
 import React from 'react';
 import { useAppSelector } from "../../store/hooks";
-import {Link} from 'react-scroll';
-// import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Button  from '../../Ui/Button';
 import clsx from 'clsx';
 import Upwork from "../../img/Upwork.png";
@@ -10,7 +9,7 @@ import Amazon from "../../img/amazon.png";
 import Shopify from "../../img/Shopify.png";
 import Facebook from "../../img/Facebook.png";
 import { motion } from "framer-motion";
-import classes from './Works.module.css';
+import mc from './Works.module.css';
 
 const Works = () => {
     const isDark = useAppSelector((state) => state.darkMode.isDarkMode)
@@ -18,10 +17,10 @@ const Works = () => {
 
     // transition
     return (
-        <div className={classes.works} id="works">
+        <div className={mc.works} id="works">
             {/* left side */}
-            <div className={classes.wLeft}>
-                <div className={classes.awesome}>
+            <div className={mc.wLeft}>
+                <div className={mc.awesome}>
                     {/* dark Mode */}
                     <span style={{ color: isDark ? "white" : "" }}>
                         Works for All these
@@ -37,44 +36,44 @@ const Works = () => {
                         <br />
                         ispum is dummy text of printing
                     </span>
-                    <Link to="contact" spy={true} smooth={true}>
-                        <Button className={clsx([classes.button, classes.sButton])}>Hire Me</Button>
+                    <Link to="contact">
+                        <Button className={clsx([mc.button, mc.sButton])}>Hire Me</Button>
                     </Link>
                     <div
-                        className={clsx([classes.blur, classes.sBlur1])}
+                        className={clsx([mc.blur, mc.sBlur1])}
                         style={{ background: "#ABF1FF94" }}
                     ></div>
                 </div>
 
                 {/* right side */}
             </div>
-            <div className={classes.Wright}>
+            <div className={mc.Wright}>
                 <motion.div
                     initial={{ rotate: 45 }}
                     whileInView={{ rotate: 0 }}
                     viewport={{ margin: "-40px" }}
                     transition={{ duration: 3.5, type: "spring" }}
-                    className={classes.wMainCircle}
+                    className={mc.wMainCircle}
                 >
-                    <div className={classes.wSecCircle}>
+                    <div className={mc.wSecCircle}>
                         <img src={Upwork} alt="" />
                     </div>
-                    <div className={classes.wSecCircle}>
+                    <div className={mc.wSecCircle}>
                         <img src={Fiverr} alt="" />
                     </div>
-                    <div className={classes.wSecCircle}>
+                    <div className={mc.wSecCircle}>
                         <img src={Amazon} alt="" />
                     </div>{" "}
-                    <div className={classes.wSecCircle}>
+                    <div className={mc.wSecCircle}>
                         <img src={Shopify} alt="" />
                     </div>
-                    <div className={classes.wSecCircle}>
+                    <div className={mc.wSecCircle}>
                         <img src={Facebook} alt="" />
                     </div>
                 </motion.div>
                 {/* background Circles */}
-                <div className={clsx([classes.wBackCircle, classes.blueCircle])}></div>
-                <div className={clsx([classes.wBackCircle, classes.yellowCircle])}></div>
+                <div className={clsx([mc.wBackCircle, mc.blueCircle])}></div>
+                <div className={clsx([mc.wBackCircle, mc.yellowCircle])}></div>
             </div>
         </div>
     );

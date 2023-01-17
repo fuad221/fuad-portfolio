@@ -3,7 +3,7 @@ import { darkModeActions } from '../../store/DarkModeSlice';
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import Button from '../../Ui/Button'
 import { FaSun, FaMoon } from 'react-icons/fa';
-import classes from './Toggle.module.css'
+import mc from './Toggle.module.css'
 import './toggle.css'
 
 
@@ -16,19 +16,17 @@ const Toggle = () => {
     }
 
     return (
-        <div className={classes.toggle}>
+        <div className={mc.toggle}>
 
             <Button onClick={handleToggle} >{isDarkMode ? <FaSun /> : <FaMoon />}</Button>
 
             <div
-                className={classes.button}
+                className={mc.button}
                 style={isDarkMode ? { left: "2px" } : { right: "2px" }}
             ></div>
-
         </div>
-
     )
-
 }
 
-export default Toggle
+export default Toggle;
+

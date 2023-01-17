@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+// import { Link  } from 'react-router-dom';
 import { Link } from 'react-scroll';
-import classes from './Navbar.module.css'
-import Button from '../../Ui/Button'
-import Toggle from '../Toggle/Toggle'
+import mc from './Navbar.module.css';
+import Button from '../../Ui/Button';
+import Toggle from '../Toggle/Toggle';
 
 
 
@@ -13,16 +14,16 @@ type NavbarProps = {
 const Navbar: React.FC<NavbarProps> = ({ children }) => {
     return (
         <>
-            <div className={classes.wrapper} >
-                <div className={classes.left}>
-                    <div className={classes.name}>Fuad</div>
+            <div className={mc.wrapper} >
+                <div className={mc.left}>
+                    <div className={mc.name}>Fuad</div>
                     <Toggle />
                 </div>
-                <div className={classes.right}>
-                    <div className={classes.list}>
-                        <ul style={{ listStyleType: "none" }}>
+                <div className={mc.right}>
+                    <div className={mc.list}>
+                        <ul style={{ listStyleType: "none"}}>
                             <li>
-                                <Link className="active" to="home" spy={true} smooth={true}>
+                                <Link className="active" to="home"  spy={true} smooth={true}>
                                     Home
                                 </Link>
                             </li>
@@ -45,7 +46,7 @@ const Navbar: React.FC<NavbarProps> = ({ children }) => {
                         </ul>
                     </div>
                     <Link to="contact" spy={true} smooth={true}>
-                        <Button className={classes.button} onClick={() => {}}>Contact my</Button>
+                        <Button className={mc.button} onClick={() => {}}>Contact my</Button>
                     </Link>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./Testimonials.module.css";
+import mc from "./Testimonials.module.css";
 import "./Testimonials.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -37,13 +37,13 @@ const Testimonial = () => {
     ];
 
     return (
-        <div className={classes.tWrapper} id="testimonial">
-            <div className={classes.tHeading}>
+        <div className={mc.tWrapper} id="testimonial">
+            <div className={mc.tHeading}>
                 <span>Clients always get </span>
                 <span>Exceptional Work </span>
                 <span>from me...</span>
-                <div className={clsx([classes.blur, classes.tBlur1])} style={{ background: "var(--purple)" }}></div>
-                <div className={clsx([classes.blur, classes.tBlur2])} style={{ background: "skyblue" }}></div>
+                <div className={clsx([mc.blur, mc.tBlur1])} style={{ background: "var(--purple)" }}></div>
+                <div className={clsx([mc.blur, mc.tBlur2])} style={{ background: "skyblue" }}></div>
 
             </div>
             <Swiper
@@ -55,7 +55,7 @@ const Testimonial = () => {
                 {clients.map((client, index) => {
                     return (
                         <SwiperSlide key={index}>
-                            <div className={classes.testimonial}>
+                            <div className={mc.testimonial}>
                                 <img src={client.img} alt="" />
                                 <span>{client.review}</span>
                             </div>

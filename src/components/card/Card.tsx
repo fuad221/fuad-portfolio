@@ -1,7 +1,7 @@
 
 import React from "react";
 import Button from '../../Ui/Button'
-import classes from "./Card.module.css";
+import mc from "./Card.module.css";
 
 type CardProp ={
     emoji: string, 
@@ -13,12 +13,12 @@ type CardProp ={
 
 const Card = ({emoji, heading, detail, color}: CardProp) => {
   return (
-    <div className={classes.card}   style={{borderColor: color}}
+    <div className={mc.card}   style={{borderColor: color}}
     > 
       <img src={emoji} alt="" />
       <span>{heading}</span>
       <span>{detail}</span>
-      <Button className={classes.cButton} onClick={()=> {}}>Learn more</Button>
+      <Button className={mc.cButton} onClick={()=> {}}>Learn more</Button>
     </div>
   );
 };
