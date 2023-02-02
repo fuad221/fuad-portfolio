@@ -5,6 +5,6 @@
 - light mode and dark mode.
 - Encrypt the code so that no one can get it and know the names of the inputs and outputs in the database or backend.
 
-https://spectacular-jalebi-6244f2.netlify.app/
+https://fuad-portfolio-hambugr.netlify.app
 
 In the coming days we will add the api and also rebuild the project with nextjs
